@@ -83,6 +83,16 @@ export const NEWS_ITEMS: NewsItem[] = [
     ],
   },
   {
+    date: "2024-01-16", severity: "info", badge: "新製品",
+    title: "Microsoft 365 Copilot エンタープライズ向け一般提供開始",
+    body: "AIアシスタント「Microsoft 365 Copilot」のエンタープライズ向け一般提供を開始。$30/user/month、日本では¥4,497/user/monthで提供。M365 E3/E5のアドオン（追加ライセンス）として利用可能。",
+    targets: ["M365_COPILOT"],
+    sources: [
+      { label: "Microsoft 365 Copilot 公式", url: "https://www.microsoft.com/microsoft-365/microsoft-365-copilot", type: "official" },
+      { label: "Microsoft ブログ発表", url: "https://blogs.microsoft.com/blog/", type: "official" },
+    ],
+  },
+  {
     date: "2022-03-01", severity: "info", badge: "商習慣変更",
     title: "New Commerce Experience (NCE) 導入 + グローバル価格改定",
     body: "NCEへの移行に伴い、M365 E3は$20→$23（+15%）、E5は$35→$38（+8.6%）の値上げを実施。",

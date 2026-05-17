@@ -47,6 +47,29 @@ export function OverviewTab() {
 
   return (
     <>
+      <div className="terms-box">
+        <h3>📖 用語解説（3要素の分解とは？）</h3>
+        <ul>
+          <li>
+            <strong>🟦 MS都合（Microsoft本社の値上げ）</strong>：
+            Microsoft が米国USD価格を引き上げた分。世界共通の純粋なベースアップ。
+            例：2022年のNCE導入時に M365 E3 が $20 → $23（+15%）になった分など。
+          </li>
+          <li>
+            <strong>🟧 為替影響（USD/JPYの変動）</strong>：
+            円安・円高による「自然な」日本円価格の変動分。
+            USD価格が変わらなくても、為替が動けば日本円換算価格は変動する。
+          </li>
+          <li>
+            <strong>🟥 日本独自改定（Microsoft Japanの調整分）</strong>：
+            <strong>「為替変動」と「Microsoft本社の値上げ」では説明できない</strong>、
+            Microsoft Japan が独自に決めた日本円価格の調整分。
+            為替変動以上に値上げした場合や、日本市場特有の事情で価格を変えた場合がここに入る。
+            例：2023年4月、USD据え置きなのに日本円だけ +14% 値上げした分は「日本独自」になります。
+          </li>
+        </ul>
+      </div>
+
       <div className="kpi-grid">
         <KpiCard
           label={`${first}年 → ${last}年 USD価格`}
@@ -103,6 +126,12 @@ export function OverviewTab() {
         </p>
         <div className="form-row">
           <ProductSelect value={productKey} onChange={setProductKey} />
+        </div>
+        <div className="alert info" style={{ fontSize: 12.5 }}>
+          <div className="title">ℹ なぜ 2016〜2021年 のバーがほぼ同じ高さに見える？</div>
+          この期間、Microsoft は M365 E3/E5 などの主要製品で <strong>USD価格を据え置き</strong>、
+          USD/JPY も <strong>108〜110円台で安定</strong>していたため、日本円価格はほぼ動きませんでした。
+          <strong>2022年3月のNCE導入以降</strong>に値上げが本格化し、グラフでも青（MS都合）・オレンジ（為替）・赤（日本独自）の層が積み上がっていきます。
         </div>
         <div className="chart-wrap xtall">
           <Bar

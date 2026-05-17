@@ -1,5 +1,5 @@
 /**
- * EA契約シミュレーター
+ * ESA契約シミュレーター
  * 単一製品 × 契約期間 × ライセンス数 → 値上げ総額と内訳
  */
 import { useState } from "react";
@@ -24,7 +24,7 @@ export function EaSimulatorTab() {
   if (!hasData(productKey, yearA) || !hasData(productKey, yearB)) {
     return (
       <div className="tab-section">
-        <h2>EA契約 値上がりシミュレーション</h2>
+        <h2>ESA契約 値上がりシミュレーション</h2>
         <div className="form-row">
           <ProductSelect value={productKey} onChange={setProductKey} />
           <YearSelect value={yearA} onChange={setYearA} label="契約開始年" />
@@ -52,7 +52,7 @@ export function EaSimulatorTab() {
 
   return (
     <div className="tab-section">
-      <h2>EA契約 値上がりシミュレーション</h2>
+      <h2>ESA契約 値上がりシミュレーション</h2>
       <p>契約開始年と更新年、自社のライセンス数を入力すると、値上げ総額と内訳が表示されます。</p>
 
       <div className="form-row">

@@ -31,7 +31,7 @@ function App() {
   const tabs: TabInfo[] = [
     { id: "overview", label: "概要" },
     { id: "news", label: "🔔 価格改定ニュース", badgeCount: unreadNewsCount },
-    { id: "ea", label: "EA契約シミュレーター" },
+    { id: "ea", label: "ESA契約シミュレーター" },
     { id: "config", label: "構成シミュレーター" },
     { id: "fx", label: "為替IFシミュレーター" },
     { id: "mpsa", label: "MPSAタイムライン" },

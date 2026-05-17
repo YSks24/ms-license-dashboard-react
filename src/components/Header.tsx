@@ -22,7 +22,7 @@ export function Header({ onPrintClick }: HeaderProps) {
             Microsoft 法人ライセンス 価格変動分析ダッシュボード
           </h1>
           <p>
-            EA・MPSAの値上げを「為替影響」と「Microsoft都合」に分解 ／ React版
+            ESA・MPSAの値上げを「為替影響」と「Microsoft都合」に分解 ／ React版
           </p>
         </div>
         <div className="header-actions">
