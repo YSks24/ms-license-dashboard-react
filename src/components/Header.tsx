@@ -18,12 +18,10 @@ export function Header({ onPrintClick }: HeaderProps) {
       <div className="header-inner">
         <div>
           <h1>
-            <span className="badge">v2.0</span>
-            Microsoft 法人ライセンス 価格変動分析ダッシュボード
+            <span className="badge">Unofficial</span>
+            Microsoft License Reference (Unofficial)
           </h1>
-          <p>
-            ESA・MPSAの値上げを「為替影響」と「Microsoft都合」に分解 ／ React版
-          </p>
+          <p>個人制作によるMicrosoftライセンス比較・参考情報サイト</p>
         </div>
         <div className="header-actions">
           {onPrintClick && (

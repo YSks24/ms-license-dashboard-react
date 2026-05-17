@@ -194,6 +194,39 @@ nav.tabs .news-count {
 }
 
 /* =========================================================
+   非公式注意バナー（一番目立つ位置）
+   ========================================================= */
+.unofficial-notice {
+  background: #fef2f2;
+  border-bottom: 2px solid #dc2626;
+  color: #991b1b;
+  padding: 12px 32px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.unofficial-notice .inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.unofficial-notice .icon {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.unofficial-notice .lines {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.unofficial-notice strong {
+  color: #7f1d1d;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* =========================================================
    速報ニュースバー
    ========================================================= */
 .news-bar {

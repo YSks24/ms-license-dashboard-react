@@ -8,6 +8,7 @@ import { useState } from "react";
 import "./utils/chartSetup";
 
 import { Header } from "./components/Header";
+import { UnofficialNotice } from "./components/UnofficialNotice";
 import { NewsBar } from "./components/NewsBar";
 import { Disclaimer } from "./components/Disclaimer";
 import { TabNav } from "./components/TabNav";
@@ -55,6 +56,7 @@ function App() {
   return (
     <>
       <Header onPrintClick={handlePrint} />
+      <UnofficialNotice />
       <NewsBar onClickJump={() => setActiveTab("news")} />
       <Disclaimer />
       <TabNav tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} />
